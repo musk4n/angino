@@ -22,5 +22,10 @@ urlpatterns = [
     # add these to configure our home page (default view) and result web page
     path('', views.home, name='home'),
     path('predictor/', views.predictor, name='predictor'),
+    path('tutorial/', views.tutorial, name='tutorial'),    
+    path('measures/', views.measures, name='measures'),  
+    path('forum/', views.forum, name='forum'),  
+
+
 ]
 # home, predictor, tutorial, measures, forum 
