@@ -8,3 +8,7 @@ def home(request):
 def predictor(request):
     return render(request, 'predictor.html')
 
+def result(request):
+     # print(request.GET)
+     return render(request, "result.html")
+
