@@ -22,6 +22,17 @@ urlpatterns = [
     # add these to configure our home page (default view) and result web page
     path('', views.home, name='home'),
     path('predictor/', views.predictor, name='predictor'),
+<<<<<<< HEAD
     path('result/', views.result, name='result'),
+=======
+    path('tutorial/', views.tutorial, name='tutorial'),    
+    path('measures/', views.measures, name='measures'),  
+    path('forum/', views.forum, name='forum'), 
+    path('result/', views.result, name='result'), 
+    
+
+
+
+>>>>>>> 5120816a3ae37c38ce97e24d3b8c2981a3d62791
 ]
 # home, predictor, tutorial, measures, forum 
