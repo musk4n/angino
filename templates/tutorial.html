@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial-Angino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* NAV BAR */
+nav{
+    /* background-color: royalblue; */
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+div.logo{
+    align-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0%   {color: rgb(207, 181, 181);}
+    15%  {color: rgb(187, 199, 255);}
+    30%  {color: rgb(240, 176, 221);}
+    45%  {color: rgb(183, 231, 189);}
+    60%  {color: rgb(187, 199, 255);}
+    75%  {color: rgb(245, 210, 145);}
+    90%  {color: rgb(107, 128, 97);}
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 4vw;
+}
+
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #616161;
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+nav ul li a:hover{
+    color: #9c4519;
+    /* text-decoration-color: skyblue; */
+    /* transform: scale(1.3); */
+    font-size: 1.1rem
+}
+
+@media (max-width:700px) and (min-width:0px){
+    nav ul li a{
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #616161;
+        transition: all 0.5s ease-in-out 0.2s;
+    }
+}
+
+/* -x- NAV BAR -x- */
+
+/* CONTENT FOR THE PAGE */
+    .container{
+        background-color: rgb(250, 245, 245);
+        width: 75vw;
+        padding: 25px;
+        margin: 20px auto;
+        /* margin-top: 20px; */
+        text-align: justify;
+        font-family: 'Amiri', serif;
+        border-radius: 10px;
+
+    }
+    .container p{
+        margin-top: 5vh;
+        font-size: 1.3rem;
+        color: #333232;
+    }
+
+    .container ul li h3{
+        margin: 4vh;
+        font-size: 1.4rem;
+        color: rgb(71, 71, 88);
+        text-align: right;
+    }
+
+    .container ul li{
+        font-size: 1.14rem;
+    }
+
+    .jump{
+        
+        background-color: rgb(226, 206, 210);
+        font-size: 1.3rem;
+        width: 35vw;
+        margin: auto;
+        margin-top: 40px;
+        padding: 7px;
+        border: solid rgb(160, 105, 114) 2px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .jump a{
+        text-decoration: none;
+        color: rgb(54, 51, 54);
+    }
+
+/* -x- CONTENT FOR THE PAGE -x- */
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            Angino
+        </div>
+        <ul>
+            <li class="item"><a href="\">home</a></li>
+            <li class="item"><a href="\tutorial">tutorial</a></li>
+            <li class="item"><a href="\predictor">predictor</a></li>
+            <li class="item"><a href="\measures">measures</a></li>
+            <li class="item"><a href="\forum">forum</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p>
+            This is a basic guide for data entry into the predictor to get accurate results. 
+            <br>
+            We are collecting 14 data points from you (excluding your name). The following text gives you a little insignt to how to fill the data correctly. You are advised to read it all before submitting the form (present in the predictor page for prediction).
+        </p>
+            <ul>
+                <li>
+                    <h3>AGE</h3> It has been established that there is a direct link between age and coronary heart disease(chd). Enter your age in years in the form.
+                </li>
+                <li>
+                    <h3>SEX</h3> Men tend to develop coronary artery disease earlier in life, after age 65 the risk of heart disease in women is almost the same as in men. Kindly choose the correct bubble.
+                </li>
+                <li>
+                    <H3>CURRENT SMOKER</H3> Smoking is a major risk factor for coronary heart disease. Both nicotine and carbon monoxide (from the smoke) put a strain on the heart by making it work faster. They also increase your risk of blood clots.You are required to tell if you are a current smoker. Choose the correct bubble for the same i.e yes/no. 
+                </li>
+                <li>
+                    <H3>NUMBER OF CIGERRETES</H3> Enter the number of cigerrets you smoke per day on an average. If you are not a smoker, please enter 0.
+                </li>
+                <li>
+                    <H3>BLOOD PRESSURE MEDICATIONS</H3> If you are currently taking blood pressure medications then kidly choose the yes bubble.
+                </li>
+                <li>
+                    <H3>PREVELANT DIABETES</H3>The link between heart disease and stroke is significant. Several types of heart disease are risk factors for stroke. Likewise, stroke is a risk factor for coronary heart disease. If you have had a heart stroke before, kindly choose the bubble for yes.
+                </li>
+                <li>
+                    <H3>PREVELANT DIABETES</H3> A high blood sugar level may lead to diabetes, which can more than double your risk of developing CHD. Diabetes can lead to CHD because it may cause the lining of blood vessels to become thicker, which can restrict blood flow. Choose the bubble yes, if you have diabetes.
+                </li>
+                <li>
+                    <H3>PREVALENT HYPERTENTION(high blood pressure)</H3> High blood pressure (hypertension) puts a strain on your heart and might lead to chd. If you have high blood pressure, then kidly choose yes for an answer.
+                </li>
+                <li>
+                    <H3>CHOLESTROL LEVEL</H3> Cholesterol is a fat made by the liver from the saturated fat in your diet. It's essential for healthy cells, but too much in the blood can lead to CHD. Fill your cholestrol level in mg/dl. Ensure that you only fill the digits and not any alphabel. In case you do not have your cholestrol levels, we urge you to get it checked either by going to your nearest labs/test centers or by purchasing a home kit. If you can not do this, then leave this field empty. 
+                </li>
+                <li>
+                    <h3>SYSTOLIC BLOOD PRESSURE</h3> When you get your blood pressure numbers, there are two of them. The first/ greater one, is your systolic blood pressure. The units for the same are mm/Hg. Kindly enter a numeric value.In case you do not have your blodd pressure, we urge you to get it checked either by going to your nearest clinit/hospital or by purchasing a home kit. If you can not do this, then leave this field empty. 
+                </li>
+                <li>
+                    <h3>DIATOLIC BLOOD PRESSURE</h3> When you get your blood pressure numbers, there are two of them. The second/ lesser one, is your diastolic blood pressure. The units for the same are mm/Hg. Kindly enter a numeric value.In case you do not have your blodd pressure, we urge you to get it checked either by going to your nearest clinit/hospital or by purchasing a home kit. If you can not do this, then leave this field empty.
+                </li>
+                <li>
+                    <h3>BMI(Body Mass Index)</h3> You can calbulate your BMI <a href="https://www.medindia.net/doctors/clinical_cal/bmi.asp"> here</a>. Kindly enter only numerical values in this field.
+                </li>
+                <li>
+                    <h3>HEART RATE</h3> The relative risk for the incidence of coronary heart disease (CHD) was significantly elevated in people with higher pulse rate when compared with those with rates under 74 beats/min. enter your heart rate in beats per unit. Kindly enter only numerical values in this field.
+                </li>
+                <li>
+                    <h3>BLOOD GLUCOSE LEVEL</h3> Poorly controlled blood sugars (too high) or out of normal range have shown to have increased the risk of CHD. Kindly enter a nerical value in this field in mg/dL.
+                </li>
+            </ul>
+
+            <div class="jump"> <a href="/predictor"> Go to Predictor</a></div>
+    </div>
+</body>
+</html>
