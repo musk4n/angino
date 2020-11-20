@@ -16,3 +16,7 @@ def forum(request):
 
 def measures(request):
     return render(request, 'measures.html')
+
+def result(request):
+    return render(request, 'result.html')
+

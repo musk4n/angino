@@ -24,7 +24,10 @@ urlpatterns = [
     path('predictor/', views.predictor, name='predictor'),
     path('tutorial/', views.tutorial, name='tutorial'),    
     path('measures/', views.measures, name='measures'),  
-    path('forum/', views.forum, name='forum'),  
+    path('forum/', views.forum, name='forum'), 
+    path('result/', views.result, name='result'), 
+    
+
 
 
 ]
