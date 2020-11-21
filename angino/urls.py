@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from angino.views import *
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -25,8 +26,9 @@ urlpatterns = [
     path('result/', views.result, name='result'),
     path('tutorial/', views.tutorial, name='tutorial'),    
     path('measures/', views.measures, name='measures'),  
-    path('forum/', views.forum, name='forum'), 
-    path('result/', views.result, name='result'), 
+    path('forum/', views.anonforum, name='forum'), 
+    path('addInForum/',views.addInForum,name='addInForum'),
+    path('addInDiscussion/',views.addInDiscussion,name='addInDiscussion'),
     
 
 ]
