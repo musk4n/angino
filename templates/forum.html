@@ -104,7 +104,7 @@ nav ul li a:hover{
     <div><h2 class="jumbotron">
         Currently active forums: {{count}}
         <!-- <form method="POST" action="{% url 'addInForum' %}"> -->
-            <form method="POST" action="\addInForum">
+            <form method="POST" action="\addInForum/">
             {% csrf_token %}
         <button class="btn btn-success" style="width:fit-content; padding: 4px; margin:10px;">Add more</button>
         </form>
@@ -134,7 +134,7 @@ nav ul li a:hover{
                         {% endif %}
                         {%endfor%}
                         {%endfor%}
-                        <form method="POST" action="\addInDiscussion">
+                        <form method="POST" action="\addInDiscussion/">
                             {% csrf_token %}
                         <button class="btn btn-success" style="width:fit-content; padding: 4px; margin:10px;">Add more</button>
                         </form>
