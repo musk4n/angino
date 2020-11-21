@@ -8,11 +8,6 @@ def home(request):
 def predictor(request):
     return render(request, 'predictor.html')
 
-<<<<<<< HEAD
-def result(request):
-     # print(request.GET)
-     return render(request, "result.html")
-=======
 def tutorial(request):
     return render(request, 'tutorial.html')
 
@@ -24,5 +19,4 @@ def measures(request):
 
 def result(request):
     return render(request, 'result.html')
->>>>>>> 5120816a3ae37c38ce97e24d3b8c2981a3d62791
 
